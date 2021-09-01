@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    oz-service-poc (0.1.6)
+    oz-service-poc (0.1.7)
       ddtrace (~> 0.52.0)
       lograge (~> 0.11.2)
 
@@ -96,8 +96,8 @@ PLATFORMS
   x86_64-darwin-18
 
 DEPENDENCIES
-  ddtrace
-  lograge
+  ddtrace (~> 0.52.0)
+  lograge (~> 0.11.2)
   oz-service-poc!
   rake (~> 13.0)
   rubocop (~> 1.7)
