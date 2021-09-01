@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
 
   # Uncomment to register a new dependency of your gem
   spec.add_dependency 'lograge', '~> 0.11.2'
-  spec.add_dependency 'ddtrace', '~> 0.52.0'
+  spec.add_dependency 'ddtrace', '~> 0.52.0', require: 'ddtrace/auto_instrument'
 
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html
