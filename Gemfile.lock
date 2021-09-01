@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    oz-service-poc (0.1.5)
+    oz-service-poc (0.1.6)
       ddtrace (~> 0.52.0)
       lograge (~> 0.11.2)
 
