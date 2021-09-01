@@ -3,6 +3,7 @@
 require_relative "poc/version"
 require_relative 'poc/configuration'
 require_relative "poc/railtie" if defined?(Rails::Railtie)
+require_relative "poc/datadog_railtie" if defined?(Rails::Railtie)
 
 module Oz
   module Service
