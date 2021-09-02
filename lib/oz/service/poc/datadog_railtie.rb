@@ -5,12 +5,10 @@ class DatadogRailtie < Rails::Railtie
 
     Datadog.configure do |c|
       c.use :rails, log_injection: true
-      c.service = 'my-service'
+      c.service = 'zadev'
       c.env = 'review_apps'
       c.tags = { 'team' => 'platform_squad' }
       c.version = '0.2'
     end
-
-    puts Datadog.configuration.service
   end
 end

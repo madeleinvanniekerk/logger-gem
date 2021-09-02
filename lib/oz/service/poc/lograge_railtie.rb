@@ -1,8 +1,8 @@
 require 'lograge'
 require 'ddtrace'
 
-class OzServicePocRailtie < Rails::Railtie
-  initializer "oz_service_poc_railtie.configure_rails_initialization" do
+class LogrageRailtie < Rails::Railtie
+  initializer "lograge_railtie.configure_rails_initialization" do
     Rails.application.configure do
       # Lograge config
       config.lograge.enabled = true
@@ -35,7 +35,5 @@ class OzServicePocRailtie < Rails::Railtie
         }
       end
     end
-
-    puts Rails.application.config.lograge
   end
 end
