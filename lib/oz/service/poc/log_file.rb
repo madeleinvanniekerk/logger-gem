@@ -6,10 +6,10 @@ module Oz
         file_contents = """
 logs:
   - type: file
-  path: '/app/log/production.log'
-  service: ruby
-  source: ruby
-  sourcecategory: sourcecode""".freeze
+    path: '/app/log/production.log'
+    service: ruby
+    source: ruby
+    sourcecategory: sourcecode""".freeze
 
         unless File.exist?(File.dirname(log_file_name))
           FileUtils.mkdir_p(File.dirname(log_file_name))
