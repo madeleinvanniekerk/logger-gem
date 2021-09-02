@@ -11,4 +11,3 @@ gem "rubocop", "~> 1.7"
 
 gem 'lograge', '~> 0.11.2'
 gem 'ddtrace', '~> 0.52.0', require: 'ddtrace/auto_instrument'
-

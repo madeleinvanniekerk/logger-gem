@@ -14,7 +14,7 @@ class LogrageRailtie < Rails::Railtie
       config.colorize_logging = false
 
       # Log to a dedicated file
-      config.lograge.logger = ActiveSupport::Logger.new(File.join(Rails.root, 'log', "#{Rails.env}.log"))
+      config.lograge.logger = ActiveSupport::Logger.new(File.join(Rails.root, 'log', "#{Oz::Service::Poc.env}.log"))
 
       config.lograge.custom_options = lambda do |event|
         # Retrieves trace information for current thread

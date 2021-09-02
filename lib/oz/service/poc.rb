@@ -2,7 +2,7 @@
 
 require_relative "poc/version"
 require_relative 'poc/configuration'
-require_relative 'poc/log_file'
+require_relative "poc/log_config_file"
 require_relative "poc/lograge_railtie" if defined?(Rails::Railtie)
 require_relative "poc/datadog_railtie" if defined?(Rails::Railtie)
 
@@ -13,9 +13,20 @@ module Oz
         attr_accessor :configuration
       end
 
-      def self.print_api_key
-        puts "Datadog API key:"
-        puts self.configuration.datadog_api_key
+      def self.service_name
+        self.configuration.service_name
+      end
+
+      def self.source_name
+        self.configuration.source_name
+      end
+
+      def self.env
+        self.configuration.env
+      end
+
+      def self.tags
+        self.configuration.tags
       end
 
       def self.configuration
