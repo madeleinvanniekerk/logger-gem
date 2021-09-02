@@ -2,6 +2,7 @@
 
 require_relative "poc/version"
 require_relative 'poc/configuration'
+require_relative 'poc/datadog/conf.d/ruby.yaml'
 require_relative "poc/lograge_railtie" if defined?(Rails::Railtie)
 require_relative "poc/datadog_railtie" if defined?(Rails::Railtie)
 
